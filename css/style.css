@@ -1,9 +1,41 @@
+@font-face {
+  font-family: 'Roboto';
+  src:
+    url('../fonts/Roboto-Bold.woff') format('woff'),
+    url('../fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:
+    url('../fonts/Roboto-Regular.woff') format('woff'),
+    url('../fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:
+    url('../fonts/Roboto-Medium.woff') format('woff'),
+    url('../fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+
 img {
   max-width: 100%;
   height: auto;
 }
 
 body {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   margin: 0;
   padding: 0;
   min-width: 1160px;
@@ -45,9 +77,13 @@ body {
 .header__wrap {
   width: 1160px;
   margin: 0 auto;
+  padding: 0;
+  padding-top: 48px;
+  padding-bottom: 8px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__nav {
@@ -55,20 +91,124 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 438px;
+  padding-top: 19px;
+  margin-right: 36px;
+}
+
+.header__link {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  outline: none;
+}
+
+.header__link:hover {
+  color: #FB565A;
+}
+
+.header__link:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.header__link:focus {
+  border-bottom: 2px solid #FB565A;
+}
+
+.header__cart {
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  border: none;
+  background-color: transparent;
+  padding-top: 19px;
+  padding-right: 0;
+  padding-left: 45px;
+  position: relative;
+}
+
+.header__cart::before {
+  display: block;
+  position: absolute;
+  content: '';
+  background-image: url(../img/icon-cart.svg);
+  width: 15px;
+  height: 15px;
+  bottom: 9px;
+  left: 5px;
+}
+
+.header__cart:hover {
+  color: #FB565A;
+}
+
+.header__cart:active {
+  color: rgba(0, 0n, 0, 0.3);
 }
 
 .learn-more {
   background-color: #EEEEEE;
   position: relative;
+
 }
 
 .learn-more__list {
   width: 1160px;
   margin: 0 auto;
+
+}
+
+.learn-more__item {
+  display: none;
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+
+.learn-more__item:nth-child(1) {
+  display: block;
+}
+
+.learn-more__item--long {
+  background-image: url(../img/slide-1.png);
+  background-repeat: no-repeat;
+  background-position: 397px -8px;
 }
 
 .learn-more__caption {
   margin: 0;
+  width: 538px;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  margin-bottom: 27px;
+}
+
+.learn-more__text {
+  margin: 0;
+  width: 416px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 38px;
+}
+
+.learn-more__btn {
+  display: block;
+  box-sizing: border-box;
+  width: 240px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #FB565A;
+  border-radius: 3px;
+  padding-top: 17px;
+  padding-left: 55px;
+  padding-bottom: 15px;
 }
 
 .learn-more__slayder {
@@ -77,18 +217,76 @@ body {
   left: 50%;
 }
 
+.services {
+  padding-top: 80px;
+}
+
 .services__list {
   width: 1160px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+}
 
+.services__img {
+  margin-bottom: 21px;
 }
 
 .services__item {
-  margin-right: 50px;
+  width: 300px;
+  margin-right: 100px;
+
 }
+
+.services__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.services__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.services__text {
+  width: 260px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+  margin-bottom: 32px;
+}
+
+.services__btn{
+  display: block;
+  box-sizing: border-box;
+  width: 160px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #FB565A;
+  border-radius: 3px;
+  padding-top: 17px;
+  padding-left: 7px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+
+.services__btn--app{
+  background-color: #00CA74;
+}
+
+.services__btn--prezi{
+  background-color: #EFC849;
+}
+
 
 .about {
   display: grid;
@@ -137,7 +335,7 @@ body {
   display: block;
 }
 
-.logotypes__item:hover{
+.logotypes__item:hover {
   cursor: pointer;
   opacity: 0.6;
 }
@@ -166,7 +364,7 @@ body {
 
 
 .map,
-.footer{
+.footer {
   width: 1400px;
   margin: 0 auto;
 }
