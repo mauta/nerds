@@ -1,0 +1,172 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 1160px;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.link {
+  text-decoration: none;
+  color: var(--basic-black);
+  font-style: normal;
+}
+
+.header {
+  margin: 0;
+  background-color: #EEEEEE;
+}
+
+.header__wrap {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 438px;
+}
+
+.learn-more {
+  background-color: #EEEEEE;
+  position: relative;
+}
+
+.learn-more__list {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.learn-more__caption {
+  margin: 0;
+}
+
+.learn-more__slayder {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+.services__list {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+}
+
+.services__item {
+  margin-right: 50px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: auto 780px 380px auto;
+  grid-template-rows: 270px auto;
+}
+
+.about__description {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.about__development {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.about__table {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.logotypes {
+  width: 1160px;
+  margin: 0 auto;
+
+}
+
+.logotypes__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 90px;
+  padding-bottom: 86px;
+}
+
+.logotypes__item {
+  width: 260px;
+  height: 100px;
+  display: block;
+}
+
+.logotypes__item:hover{
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.logotypes__logo-html-academy {
+  background-image: url(../img/logo-html-academy.svg);
+  background-repeat: no-repeat;
+}
+
+.logotypes__logo-borodinski {
+  background-image: url(../img/logo-barbershop.png);
+  background-repeat: no-repeat;
+}
+
+.logotypes__logo-pink {
+  background-image: url(../img/logo-pink.png);
+  background-repeat: no-repeat;
+}
+
+.logotypes__logo-Mishka {
+  background-image: url(../img/logo-mishka.png);
+  background-repeat: no-repeat;
+}
+
+
+
+
+.map,
+.footer{
+  width: 1400px;
+  margin: 0 auto;
+}
