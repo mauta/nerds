@@ -40,10 +40,28 @@
     <div class="catalog__wrap">
 
       <form class="catalog__filter filter" action="https://echo.htmlacademy.ru/" method="GET">
-        <!-- здeсь могла быть ваша реклама и ползунок -->
-        <div class="cost">
-          <p class="cost__title">Стоимость:</p>
-        </div>
+        <fieldset class="cost">
+          <legend class="cost__title">Стоимость:</legend>
+          <div class="cost__filter">
+            <div class="cost__range range">
+              <div class="range__controls">
+                <div class="range__scale">
+                  <div class="range__bar"></div>
+                </div>
+                <div class="range__toggle range__toggle-min"  tabindex="0"></div>
+                <div class="range__toggle range__toggle-max"  tabindex="0"></div>
+            </div>
+            <div class="cost__controls">
+              <label class="cost__label cost__min">
+                от <input class="cost__input" type="number" name="min-price" value="0">
+              </label>
+              <label class="cost__label cost__max">
+                до <input class="cost__input" type="number" name="max-price" value="15000">
+              </label>
+            </div>
+          </div>
+      </fieldset>
+    
 
 
         <fieldset class="grid">
@@ -181,7 +199,7 @@
 
         <div class="catalog__pages">
 
-          <a class="catalog__link link" href="">1</a>
+          <a class="catalog__link catalog__link-current link" href="">1</a>
           <a class="catalog__link link" href="">2</a>
           <a class="catalog__link link" href="">3</a>
 
