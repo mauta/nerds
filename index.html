@@ -23,7 +23,7 @@
         </svg>
       </a>
       <ul class="header__nav list">
-        <li class="header__item"><a href="#" class="header__link link">Студия</a></li>
+        <li class="header__item"><a href="#" class="header__link header__link--active link">Студия</a></li>
         <li class="header__item"><a href="#" class="header__link link">Клиенты</a></li>
         <li class="header__item"><a href="catalog.html" class="header__link link">Магазин</a></li>
         <li class="header__item"><a href="#" class="header__link link">Контакты</a></li>
@@ -37,7 +37,7 @@
     <section class="learn-more">
       <h2 class="visually-hidden">узнать о наших подходах больше</h2>
       <ul class="learn-more__list list">
-        <li class="learn-more__item learn-more__item--long">
+        <li class="learn-more__item learn-more__item--long learn-more__item--current">
           <p class="learn-more__caption">Долго, дорого, скрупулезно.</p>
           <p class="learn-more__text">Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.
           </p>
@@ -49,7 +49,7 @@
           </p>
           <a href="#" class="learn-more__btn link">Узнать больше</a>
         </li>
-        <li class="learn-more__item learn-more__item--night  learn-more__item--current">
+        <li class="learn-more__item learn-more__item--night">
           <p class="learn-more__caption">Только ночь,<br> только хардкор</p>
           <p class="learn-more__text">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только
             начинается..</p>
@@ -178,6 +178,28 @@
 
     </div>
   </footer>
+
+  <div class="email-us hidden">
+
+    <h3 class="email-us__title">Напишите нам</h3>
+    <form class="email-us__form" action="https://echo.htmlacademy.ru" method="post">
+      <label class="email-us__label">
+        Ваше имя:
+        <input class="email-us__input email-us__input--name" type="text" placeholder="Имя Фамилия" name="name" required>
+      </label>
+      <label class="email-us__label">
+        Ваш email:
+        <input class="email-us__input email-us__input--email" type="email" placeholder="email@example.com" name="name" required>
+      </label>
+      <label class="email-us__label  email-us__label--text">
+        Текст письма:
+        <textarea class="email-us__textarea" placeholder="В свободной форме" name="text" required></textarea>
+      </label>
+      <button class="email-us__btn" type="submit">Отправить</button>
+    </form>
+    <button class="email-us__btn-close"><span class="visually-hidden">закрыть</span> </button>
+  </div>
+
   <script src="https://api-maps.yandex.ru/2.1/?apikey=593a6acd-cf54-4663-a17e-91b99212dd90&lang=ru_RU"
     type="text/javascript">
   </script>

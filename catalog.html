@@ -12,7 +12,7 @@
 <body>
   <header class="header">
     <div class="header__wrap">
-      <a href="#" class="header__logo-link">
+      <a href="index.html" class="header__logo-link">
         <svg class="header__logo" width="160" height="66" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd"
             d="M48.031 24.783c3.651 3.974 11.616.375 9.031-4.922-1.726-3.556-4.312-2.731-6.158-1.82-3.696 1.779-4.395 5.047-2.873 6.742zm-5.926-2.781c2.376 4.866-4.937 8.171-8.292 4.521-1.398-1.555-.755-4.56 2.636-6.193 1.697-.836 4.073-1.596 5.656 1.672zm115.831 28.372c-1.221.16-2.494.268-3.715.373l-.042.004v.056c-2.415 17.364-26.188 20.231-26.779 6.599-.269-6.167 11.593-7.95 23.398-9.088.209-5.407-3.565-4.195-8.15-2.722-4.819 1.548-10.533 3.383-13.458-1.879-5.019-9.025 14.632-17.938 16.728-16.102 6.353 5.562 3.482 6.591-1.191 8.267l-.188.068c-9.49 3.41-5.791 4.107-4.511 3.726 7.569-2.253 14.366-1.04 14.312 8.317.615-.051 1.217-.09 1.814-.13a88.814 88.814 0 001.943-.141c2.306-.215 2.467 2.435-.161 2.652zm-7.514.756c-9.124 1.028-17.013 2.436-16.153 5.355 1.716 5.573 13.577 6.818 16.153-5.355zm-32.632-16.9c-.815 5.65-.794 11.651-.112 11.688.334.019 2.304-.346 2.939-1.507.609-1.118 1.177-2.657 1.771-4.27 1.198-3.25 2.507-6.801 4.495-7.817 2.842-1.451-8.088-5.045-9.093 1.906zM28.883 62.666c-7.919 5.338-14.219 4.159-12.212-10.848 1.45-10.904-.948-11.521-3.122-9.442-2.845 2.697-4.628 9.723-4.684 16.412.258 1.607.593 3.2 1.004 4.776.334 1.63-4.907 3.315-7.974 1.011C.837 63.79 0 55.865 0 45.131c0-8.824 1.171-14.895 2.23-15.175 8.029-2.191 9.312 1.348 7.583 7.981a47.638 47.638 0 00-1.395 7.924c1.673-4.664 4.071-8.485 6.803-10.173 7.416-4.664 13.605-2.473 12.434 6.801-2.007 16.58-2.174 18.827-.39 17.535 2.231-1.574 3.68 1.238 1.618 2.642zm12.883 2.476c5.41.619 11.041-1.068 13.216-4.552 1.839-2.923.334-3.935-1.785-1.575-4.46 5.116-9.088 2.811-11.039-2.36l.502-.168c9.422-3.766 15.332-13.994 11.597-19.783-5.131-7.981-21.188-.844-23.196 10.341-1.84 10.341 2.955 17.254 10.705 18.097zm-.389-11.97c5.855-4.159 7.806-13.32 6.189-15.905-1.728-2.697-5.074 1.517-6.245 11.746-.111 1.461-.111 2.865.056 4.159zm35.748-2.121c2.063-.675 4.369-2.552 5.966-5.059.447-.703.823-1.335 1.339-2.98-.063.2-.039.108.02-.117.109-.409.334-1.262.37-1.624 0-.056.056-.339.112-.449 1.225-6.857-3.011-10.736-8.867-7.813-3.289 1.629-7.359 7.813-9.812 14.501.613-3.598 1.672-7.026 2.843-10.399 2.007-5.957-1.728-8.992-8.14-7.249-1.06.281-3.011 8.093-3.011 16.917 0 10.734.558 16.916 1.617 17.704 3.066 2.36 8.53.618 7.973-.956-.216-.598-.38-1.199-.542-1.797l-.016-.057c0-.169 0-.338-.055-.506-1.061-6.971 3.011-16.635 6.356-19.221.892-.731 2.118-.225 2.286 1.686-2.732 1.349-3.624 3.71-3.624 4.721 0 2.754 2.787 3.428 5.185 2.698z"
@@ -23,9 +23,9 @@
         </svg>
       </a>
       <ul class="header__nav list">
-        <li class="header__item"><a href="#" class="header__link link">Студия</a></li>
+        <li class="header__item"><a href="index.html" class="header__link link">Студия</a></li>
         <li class="header__item"><a href="#" class="header__link link">Клиенты</a></li>
-        <li class="header__item"><a href="#" class="header__link link">Магазин</a></li>
+        <li class="header__item"><a href="#" class="header__link link header__link--active">Магазин</a></li>
         <li class="header__item"><a href="#" class="header__link link">Контакты</a></li>
       </ul>
       <button class="header__cart" type="button">Корзина</button>
@@ -53,10 +53,10 @@
             </div>
             <div class="cost__controls">
               <label class="cost__label cost__min">
-                от <input class="cost__input" type="number" name="min-price" value="0">
+                от <input class="cost__input cost__input--min" type="number" name="min-price" value="0">
               </label>
               <label class="cost__label cost__max">
-                до <input class="cost__input" type="number" name="max-price" value="15000">
+                до <input class="cost__input cost__input--max" type="number" name="max-price" value="15000">
               </label>
             </div>
           </div>
@@ -127,12 +127,12 @@
           <span class="catalog-header__sort">сортировать:</span>
           <ul class="catalog-header__list list">
             <!-- тут в идеале кнопки -->
-            <li class="catalog-header__sort-item">По цене</li>
+            <li class="catalog-header__sort-item catalog-header__sort-item--active">По цене</li>
             <li class="catalog-header__sort-item">По типу</li>
             <li class="catalog-header__sort-item">По названию</li>
           </ul>
           <div class="catalog-header__btn-wrap">
-            <button class="catalog-header__btn">
+            <button class="catalog-header__btn catalog-header__btn--active">
               <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                 <path fill="#231F20" d="M5.5 10L0 0h11" /></svg>
               <span class="visually-hidden">вниз</span>
@@ -249,6 +249,27 @@
 
     </div>
   </footer>
+
+  <div class="email-us hidden">
+
+    <h3 class="email-us__title">Напишите нам</h3>
+    <form class="email-us__form" action="https://echo.htmlacademy.ru" method="post">
+      <label class="email-us__label">
+        Ваше имя:
+        <input class="email-us__input email-us__input--name" type="text" placeholder="Имя Фамилия" name="name" required>
+      </label>
+      <label class="email-us__label">
+        Ваш email:
+        <input class="email-us__input email-us__input--email" type="email" placeholder="email@example.com" name="name" required>
+      </label>
+      <label class="email-us__label  email-us__label--text">
+        Текст письма:
+        <textarea class="email-us__textarea" placeholder="В свободной форме" name="text" required></textarea>
+      </label>
+      <button class="email-us__btn" type="submit">Отправить</button>
+    </form>
+    <button class="email-us__btn-close"><span class="visually-hidden">закрыть</span> </button>
+  </div>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=593a6acd-cf54-4663-a17e-91b99212dd90&lang=ru_RU"
     type="text/javascript">
   </script>
