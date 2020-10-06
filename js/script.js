@@ -160,7 +160,9 @@
          console.log('pinX ' + pinX)
          pinDepthLength = pinDepthLength - shift.x
          console.log(pinDepthLength)
-
+         if(pinDepthLength>216){
+             pinDepthLength = 216;
+         }
          pinValueMax.value = Math.round(pinValue * DEFAULT_VALUE_MAX);
 
          pinDepth.style.width = (pinDepthLength - 18) + 'px';
@@ -199,7 +201,9 @@
          };
 
          let pinX = pinLevelMin.offsetLeft - shift.x;
-
+         if(pinX <18){
+            pinX = 18
+        }
          if (pinX > DEFAULT_PIN_LINE_MIN && pinX < DEFAULT_PIN_LINE_MAX_FOR_MIN) {
              pinLevelMin.style.left = pinX + 'px';
              console.log(pinLevelMin.style.left)
@@ -210,11 +214,19 @@
          }
          pinValue = pinX / pinLine.offsetWidth;
 
+         console.log(pinX)
+         console.log( pinValue)
+       
+         console.log(pinX)
+         console.log( pinValue)
          if (pinValue > 1) {
              pinValue = 1;
          }
-         pinDepthLength = (pinDepthLength) + shift.x
 
+         pinDepthLength = (pinDepthLength) + shift.x
+         if(pinDepthLength>216){
+            pinDepthLength = 216;
+        }
          pinValueMin.value = Math.round(pinValue * DEFAULT_VALUE_MAX);
          pinDepth.style.width = (pinDepthLength - 18) + 'px';
          pinDepth.style.left = pinX + 'px';
