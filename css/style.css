@@ -1412,7 +1412,7 @@ body {
 }
 
 .email-us__input:invalid{
-  border: 3px solid red;
+  /* border: 3px solid red; */
   color: red;
 }
 
