@@ -42,6 +42,7 @@ body {
   min-width: 1160px;
   min-height: 100%;
   display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
@@ -208,9 +209,22 @@ body {
 
 .learn-more__item--current {
   display: block;
-  animation-name: slide;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
+  -webkit-animation-name: slide;
+          animation-name: slide;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0.2;
+  }
+ 
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes slide {
@@ -933,13 +947,18 @@ body {
   left: 165px;
 }
 
+.cost__controls{
+  display: flex;
+  justify-content:space-between;
+}
+
 .cost__label {
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   text-transform: uppercase;
   color: #283136;
-  margin-right: 29px;
+  /* margin-right: 28px; */
 }
 
 .cost__input {
@@ -994,7 +1013,9 @@ body {
 .grid__input,
 .features__input {
   position: absolute;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .grid__label,
@@ -1207,7 +1228,8 @@ body {
   border: 1px solid #EEEEEE;
   width: 358px;
   height: 578px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
   margin: 0;
   padding: 0;
